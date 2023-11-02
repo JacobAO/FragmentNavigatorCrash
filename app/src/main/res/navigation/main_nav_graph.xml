@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <custom-destination
+        android:id="@+id/mainFragment"
+        android:name="com.example.fragmentnavigatorcrash.MainFragment"
+        app:restoreState="true">
+        <action
+            android:id="@+id/toOtherFragment"
+            app:destination="@id/otherFragment" />
+    </custom-destination>
+    <custom-destination
+        android:id="@+id/otherFragment"
+        android:name="com.example.fragmentnavigatorcrash.OtherFragment">
+    </custom-destination>
+
+
+<!--    If you use fragment here instead of custom-destination and remove the custom navigator in MainActivity the crash does not occur -->
+
+<!--    <fragment-->
+<!--        android:id="@+id/mainFragment"-->
+<!--        android:name="com.example.fragmentnavigatorcrash.MainFragment"-->
+<!--        app:restoreState="true">-->
+<!--        <action-->
+<!--            android:id="@+id/toOtherFragment"-->
+<!--            app:destination="@id/otherFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/otherFragment"-->
+<!--        android:name="com.example.fragmentnavigatorcrash.OtherFragment">-->
+<!--    </fragment>-->
+
+</navigation>

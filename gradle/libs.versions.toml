@@ -1,0 +1,10 @@
+
+[versions]
+# Crash occurs with versions after 2.5.3
+#androidx-navigation = "2.5.3"
+#androidx-navigation = "2.6.0"
+androidx-navigation = "2.7.5"
+
+[libraries]
+androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "androidx-navigation" }
+navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "androidx-navigation" }
